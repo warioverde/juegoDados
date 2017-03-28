@@ -22,13 +22,17 @@ public class JuegoDadosTest {
         System.out.println("hola");
         mijuego.juego();
         
-        
-        while (repetir!=1){
-            System.out.println("quiere repetir el juego ?");
-        repetir = leer.nextInt();
+        do{
+        System.out.println("quiere repetir el juego?");
+        System.out.println("1.-si");
+        System.out.println("2.-no");
+        repetir=leer.nextInt();
+        if (repetir == 1){
             mijuego.juego();
-            
         }
+        }while (repetir ==1);
+            
+       
         
         
     }

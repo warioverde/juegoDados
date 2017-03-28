@@ -22,9 +22,12 @@ public class JuegoDados {
     public void juego(){
         
         if (sumar()>7){
+            System.out.println("su suma es "+sumar());
             System.out.println("ganaste pe");
+            
         }
         else{
+            System.out.println("su suma es "+sumar());
             System.out.println("perdiste we");
         }
         
